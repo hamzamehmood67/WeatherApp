@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .weather-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .city-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .temperature {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .minor-details {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Weather Information</h1>
+
+  <div class="weather-container">
+    <div class="city-name">{%CITY%}</div>
+    <div class="temperature">{%temp%}&deg;C</div>
+    <div class="description">{%main%}</div>
+    <div class="minor-details">
+      <p>Humidity: {%humidity%}</p>
+      <p>Wind Speed: {%wind%} km/h</p>
+      <p>Pressure: {%pressure%} hPa</p>
+    </div>
+  </div>
+</body>
+
+</html>
